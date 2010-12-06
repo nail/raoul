@@ -109,6 +109,11 @@ Your CouchDB database will need a *_design_tools* document such as:
       }
     }
 
+## See Also
+
+* [Jerk](https://github.com/gf3/Jerk) - A fun little IRC bot library for node.js. Ridiculously simple to set-up and get going!
+* [IRC-js](https://github.com/gf3/IRC-js) - An IRC library for node.js
+* [node-couchdb](https://github.com/felixge/node-couchdb) - A full CouchDB API implementation for node.js
 
 ## Credits
 
