@@ -75,7 +75,7 @@ The *handler* is a function that takes 2 arguments, *message*, which is the mess
 
 The *this* keyword inside the handler will refer to the bot instance.
 
-If the *handler* returns *true*, there be no further processing, so if you want to implement something like an infobot that must catch everything, don't return *true* in your handler.
+If the *handler* returns *true*, there will be no further processing, so if you want to implement something like an infobot that must catch everything, don't return *true* in your handler.
 
 #### Provided Watchers
 
@@ -93,6 +93,21 @@ Your own store must provide at least those 2 methods:
 
 * random_reply(message, callback)
 * save_message(message)
+
+### CouchDB
+
+Your CouchDB database will need a *_design_tools* document such as:
+
+    {
+      "_id": "_design/tools",
+      "language": "javascript",
+      "views": {
+         "random": {
+             "map": "function(doc) {if (doc.type == 'quote' && doc.random) {emit(doc.random, doc);}}",
+             "reduce": "_count"
+          }
+      }
+    }
 
 
 ## Credits
