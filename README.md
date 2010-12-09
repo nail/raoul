@@ -1,6 +1,6 @@
 # Raoul
 
-Yet another useless IRC bot, written in javascript and running on *node.js*, using a *CouchDB* backend by default.
+Yet another useless IRC bot, written in javascript and running on *node.js*, and providing an SQLite or CouchDB store.
 You are free to provide your own store backend. This is a pretty wrong use for CouchDB but I wanted to get my hands on it.
 
 ## Synopsys
@@ -15,7 +15,9 @@ Raoul will:
 
 raoul depends on a few other modules:
 
-    npm install irc-js request sprintf
+    npm install irc-js request sprintf sqlite
+
+**irc-js must be 0.2.10 or higher**
 
 ## Example
 
@@ -94,7 +96,7 @@ Your own store must provide at least those 2 methods:
 * random_reply(message, callback)
 * save_message(message)
 
-### CouchDB
+#### CouchDB
 
 Your CouchDB database will need a *_design_tools* document such as:
 
@@ -108,6 +110,20 @@ Your CouchDB database will need a *_design_tools* document such as:
           }
       }
     }
+
+#### SQLite
+
+Create an SQLite 3 database such as:
+
+    CREATE TABLE quotes (id INTEGER PRIMARY KEY AUTOINCREMENT, quote TEXT);
+
+In the options, setup your store such as:
+
+    store: {
+      backend: 'sqlite',
+      file: 'yourdb.db'
+    }
+
 
 ## See Also
 
