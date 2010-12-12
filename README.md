@@ -22,7 +22,7 @@ raoul depends on a few other modules, you can either install them globally:
     cd raoul/
     npm bundle
 
-that will create a node_module directory and compile/install the required modules.
+that will create a node_modules directory and compile/install the required modules.
 
 ## Example
 
