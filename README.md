@@ -13,9 +13,9 @@ Raoul will:
 
 ## Installation
 
-raoul depends on a few other modules:
+raoul depends on a few other modules, which are provided in the bundle, but if not:
 
-    npm install irc-js request sprintf sqlite
+    npm install irc-js request sprintf sqlite couch-client
 
 **irc-js must be 0.2.10 or higher**
 
