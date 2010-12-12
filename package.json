@@ -1,0 +1,23 @@
+{
+  "name": "raoul"
+, "description": "A node.js IRC bot"
+, "author": "Renaud Drousies"
+, "homepage": "https://github.com/nail/raoul/"
+, "version": "0.1.3"
+, "engines": [ "node >= 0.2.0" ]
+, "main": "./lib/raoul"
+, "repository":
+  { "type": "git"
+  , "url": "https://nail@github.com/nail/raoul.git"
+  }
+, "license":
+  { "type": "Public Domain"
+  }
+, "dependencies":
+  { "irc-js": ">= 0.2.10"
+,   "request": ">= 0.10.0"
+,   "sprintf": ">= 0.1.1"
+,   "sqlite": ">= 0.0.6"
+,   "couch-client": ">= 0.0.3"
+  }
+}
