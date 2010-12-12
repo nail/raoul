@@ -12,6 +12,7 @@
   }
 , "license":
   { "type": "Public Domain"
+,   "url": "https://github.com/nail/raoul/blob/master/UNLICENSE"
   }
 , "dependencies":
   { "irc-js": ">= 0.2.10"
