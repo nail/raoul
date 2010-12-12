@@ -13,11 +13,16 @@ Raoul will:
 
 ## Installation
 
-raoul depends on a few other modules, which are provided in the bundle, but if not:
+raoul depends on a few other modules, you can either install them globally:
 
     npm install irc-js request sprintf sqlite couch-client
 
-**irc-js must be 0.2.10 or higher**
+... or for your bot only, to do so:
+
+    cd raoul/
+    npm bundle
+
+that will create a node_module directory and compile/install the required modules.
 
 ## Example
 
