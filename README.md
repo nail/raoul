@@ -140,4 +140,3 @@ In the options, setup your store such as:
 Written by Renaud Drousies
 
 Raoul is [UNLICENSED](http://unlicense.org)
-
